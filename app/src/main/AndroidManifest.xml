@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="beprogrammer.camera_test">
+
+    <!--
+        보안상의 이슈가 될수있는 행동에 대한 퍼미션권한을 선언해주기위한부분입니다.
+        사용된것은
+        CMERRA : 카메라 디바이스 퍼미션
+        WRITE_EXTERNAL_STORAGE : 외부경로 쓰기 퍼미션
+        READ_EXTERNAL_STORAGE : 내부경로 읽기 퍼미션
+        입니다.
+    -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
