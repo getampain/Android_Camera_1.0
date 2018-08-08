@@ -25,6 +25,7 @@ public class CameraSurfaceView extends SurfaceView implements SurfaceHolder.Call
     //<param name="holder">실제로 그림을 그리는등의 작업을하는 그래픽버퍼</param>
     public void surfaceCreated(SurfaceHolder holder) {
         camera = Camera.open();
+        Log.e("CameraSurfaceView", "Create Surfaceview");
 
         try {
             camera.setPreviewDisplay(mHolder);
